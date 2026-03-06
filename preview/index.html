@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fivestartravel UI Preview</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Fivestartravel Portal UI Framework</h1>
+        <p>Interactive preview page for Admin, Agent, and Supplier portal screens.</p>
+      </div>
+      <a class="button" href="../docs/ui-wireframes.md" target="_blank" rel="noreferrer">Open Wireframe Doc</a>
+    </header>
+
+    <main class="layout">
+      <aside class="sidebar">
+        <h2>Portal</h2>
+        <div id="portalTabs" class="tabs"></div>
+
+        <h3>Screens</h3>
+        <input id="searchInput" type="search" placeholder="Filter screens..." />
+        <ul id="screenList" class="screen-list"></ul>
+      </aside>
+
+      <section class="preview-panel">
+        <div class="preview-header">
+          <div>
+            <p class="kicker" id="portalName">Portal</p>
+            <h2 id="screenName">Screen</h2>
+          </div>
+          <span id="screenCounter" class="counter"></span>
+        </div>
+
+        <div id="canvas" class="canvas"></div>
+
+        <section class="notes">
+          <h3>Implementation notes</h3>
+          <ul>
+            <li>Reusable layout primitives: cards, tables, metrics, and form blocks.</li>
+            <li>Consistent interaction flow: list → details → action.</li>
+            <li>Use this page as a visual specification before framework implementation.</li>
+          </ul>
+        </section>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
